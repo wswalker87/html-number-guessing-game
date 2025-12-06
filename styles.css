@@ -9,3 +9,12 @@ h1 {
   font-weight: 400
 }
 
+.intro  {
+  border-color: black;
+  border-style: solid;
+}
+
+#user-guess {
+  width: 175px;
+  text-align: center;
+}

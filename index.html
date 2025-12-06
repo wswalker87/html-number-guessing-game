@@ -1,19 +1,43 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title>TITLE</title>
+    <title>Guess The Number</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Your link to your CSS file -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles.css">
     <!-- Your Javascript file goes here -->
-    <script src="" async defer></script>
+    <script src="app.js" async defer></script>
   </head>
   <body>
     <!-- your HTML should go here -->
     <nav>
       <h1>Let's Play the Guessing Number Game!</h1>
     </nav>
+<hr>
+    <!-- Allow the user to guess a number between 1 and 100 and click submit -->
+    <p class="intro">Welcome to the game! You will need to guess a number between 1 and 100. Don't worry, I will telly you if you need to guess higher, lower, or YOU WIN! SPOT ON!</p>
+    
+    <!-- Input form to taken user input-->
+    <div class="user-input-div">
+      <form onsubmit="handleFormSubmit(event)">
+        <label for="user-input-guess" id="user-input-guess"> Enter your best guess:  <input id="user-guess" name="user-input-guess" placeholder="Must be a number 1 to 100" type="number" required></label>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    
+    <!-- Inform the user to guess higher, lower, or correct.-->
+    <div class="feedback-to-user">
+      <p>Your guess was: [insert-guess-here]</insert-guess-here></p>
+      <p>You need to guess [insert-direction-suggestion]</p>
+    </div>
+    
+    <!-- Keep track of previous guesses-->
+     <div class="previous-guesses">
+        <p>Here is a list of your previous guesses:</p>
+     </div>
 
+     <div class=""
 
   </body>
 </html>
