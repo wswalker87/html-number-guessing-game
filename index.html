@@ -15,29 +15,30 @@
     </nav>
 <hr>
     <!-- Allow the user to guess a number between 1 and 100 and click submit -->
-    <p class="intro">Welcome to the game! You will need to guess a number between 1 and 100. Don't worry, I will telly you if you need to guess higher, lower, or YOU WIN! SPOT ON!</p>
+    <p class="intro">Welcome to the game! You will need to guess a number between 1 and 100. Don't worry, I will tell you if you need to guess higher, lower, or YOU WIN! SPOT ON!</p>
     
     <!-- Input form to taken user input-->
     <div class="user-input-div">
-      <form onsubmit="handleFormSubmit(event)">
-        <label for="user-input-guess" id="user-input-guess"> Enter your best guess:  <input id="user-guess" name="user-input-guess" placeholder="Must be a number 1 to 100" type="number" required></label>
+      <form id="guess-form">
+        <label for="user-input-guess"> Enter your best guess:  <input id="user-input-guess" name="user-input-guess" placeholder="Must be a number 1 to 100" type="number" autofocus required></label>
         <br>
+        <!-- <button onclick="appendGuess()" type="submit">Submit</button> -->
         <button type="submit">Submit</button>
       </form>
     </div>
     
     <!-- Inform the user to guess higher, lower, or correct.-->
     <div class="feedback-to-user">
-      <p>Your guess was: [insert-guess-here]</insert-guess-here></p>
-      <p>You need to guess [insert-direction-suggestion]</p>
+      <p id="userConfirmation"></p>
+      <p></p>
     </div>
     
     <!-- Keep track of previous guesses-->
      <div class="previous-guesses">
         <p>Here is a list of your previous guesses:</p>
+        <ul id="list-of-guesses">
+
+        </ul>
      </div>
-
-     <div class=""
-
   </body>
 </html>
